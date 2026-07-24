@@ -5,21 +5,21 @@
 class Beardrive < Formula
   desc "BearDrive: a synced file system for AI agents — mount, sync, and track folders"
   homepage "https://github.com/runbear-io/beardrive"
-  version "0.8.0"
+  version "0.9.0"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/runbear-io/beardrive/releases/download/v0.8.0/beardrive_0.8.0_darwin_amd64.tar.gz"
-      sha256 "6c7054263b90aa797873b2fd42bf8da8c1dacb84d1fd3bd2b833b05e52373dba"
+      url "https://github.com/runbear-io/beardrive/releases/download/v0.9.0/beardrive_0.9.0_darwin_amd64.tar.gz"
+      sha256 "f5faf4bda270182ca5bec65aebf5b89acd3269f8bb55be54fbed3c4131d3d2a3"
 
       define_method(:install) do
         bin.install "bdrive"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/runbear-io/beardrive/releases/download/v0.8.0/beardrive_0.8.0_darwin_arm64.tar.gz"
-      sha256 "2edcd841bdb29842268c0f6c959ed71d60802e5c5a52a8817768a3757bdf61bb"
+      url "https://github.com/runbear-io/beardrive/releases/download/v0.9.0/beardrive_0.9.0_darwin_arm64.tar.gz"
+      sha256 "b63b4478bab51fa71b22b44eafb2bb989d84b3f594f09d8d3011ee873cf98d3c"
 
       define_method(:install) do
         bin.install "bdrive"
@@ -29,15 +29,15 @@ class Beardrive < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/runbear-io/beardrive/releases/download/v0.8.0/beardrive_0.8.0_linux_amd64.tar.gz"
-      sha256 "27f7b41a93f650b79578564ed6e628864299d65315d744ba06659bf594d6241c"
+      url "https://github.com/runbear-io/beardrive/releases/download/v0.9.0/beardrive_0.9.0_linux_amd64.tar.gz"
+      sha256 "5352e8f863b0e4a314e800b05d6a1c19c4aa89377819d2bd758ddb288f1c8013"
       define_method(:install) do
         bin.install "bdrive"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/runbear-io/beardrive/releases/download/v0.8.0/beardrive_0.8.0_linux_arm64.tar.gz"
-      sha256 "c20b95be6c9453c8f1bfe4fef32256e61d3355b6470fb9d893c65d7b9be0e63e"
+      url "https://github.com/runbear-io/beardrive/releases/download/v0.9.0/beardrive_0.9.0_linux_arm64.tar.gz"
+      sha256 "204143fad144d5407387bda1e7eaeeae4d0dc0cb5dabc6c36141c3ff67981440"
       define_method(:install) do
         bin.install "bdrive"
       end
