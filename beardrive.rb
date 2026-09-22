@@ -11,7 +11,7 @@ class Beardrive < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/runbear-io/beardrive/releases/download/v0.16.0/beardrive_0.16.0_darwin_amd64.tar.gz"
-      sha256 "730c630cc7cb980cb12a487f260b1f85cdb482088f480c42e897c7500ecbb0ca"
+      sha256 "8278abed98e139c6224f8b9c9d3acd393d8168775286bb5d25556bc24d4f9303"
 
       define_method(:install) do
         bin.install "bdrive"
@@ -19,7 +19,7 @@ class Beardrive < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/runbear-io/beardrive/releases/download/v0.16.0/beardrive_0.16.0_darwin_arm64.tar.gz"
-      sha256 "65473c7001b3cbc8397895ea7a16df0f335da8146fb918246882995eac8358e9"
+      sha256 "318dcf40946063e66ff7f54105cabde24ef7eb36b291e12fa4a6db4191c0ea44"
 
       define_method(:install) do
         bin.install "bdrive"
@@ -30,14 +30,14 @@ class Beardrive < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/runbear-io/beardrive/releases/download/v0.16.0/beardrive_0.16.0_linux_amd64.tar.gz"
-      sha256 "0faa68a447b761af701f3b80bb50be40a86f13fe0d911489d6f60e63483e3970"
+      sha256 "febd8c261691c84ace21b5765a03a4c89e6b7fab83f8b4627a1b74cb97d61e85"
       define_method(:install) do
         bin.install "bdrive"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/runbear-io/beardrive/releases/download/v0.16.0/beardrive_0.16.0_linux_arm64.tar.gz"
-      sha256 "efb4841819de473ac485d5d2b5c56433c2dc2cfb08e346bf08dd852db34a5e58"
+      sha256 "d6005b938dd27962f395a0d5095af0b326d3e09ecb81d9e94f1de63a7395fca8"
       define_method(:install) do
         bin.install "bdrive"
       end
